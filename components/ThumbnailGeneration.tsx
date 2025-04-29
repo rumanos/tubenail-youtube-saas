@@ -28,7 +28,10 @@ function ThumbnailGeneration({ videoId }: { videoId: string }) {
       <div className={`flex overflow-x-auto gap-4 ${images?.length && "mt-4"}`}>
         {images?.map((image) => (
           image.url && (
-            <div 
+            <a 
+              href={image.url}
+              target="_blank"
+              rel="noopener noreferrer"
               key={image._id} 
               className="flex-none w-[200px] h-[110px] rounded-lg overflow-x-auto"
             >
@@ -39,7 +42,7 @@ function ThumbnailGeneration({ videoId }: { videoId: string }) {
                 height={200}
                 className="object-cover" 
               />
-            </div>
+            </a>
           )
         ))}
       </div>
