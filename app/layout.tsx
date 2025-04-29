@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TubeNail",
+  title: "Gentube",
   description: "Your youtube content agent",
 };
 
